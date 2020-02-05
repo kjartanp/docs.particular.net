@@ -236,6 +236,15 @@
     - NServiceBus.Gateway
     - NServiceBus
 
+- Key: GatewaySql
+  Name: SQL Gateway Storage
+  DocoUrl: nservicebus/gateway/sql
+  GitHubOwner: Particular
+  Category: Other
+  ProjectUrl: https://github.com/Particular/NServiceBus.Gateway.Sql
+  NugetOrder:
+    - NServiceBus.Gateway.Sql
+
 - Key: Heartbeats
   Name: ServiceControl Heartbeats
   DocoUrl: monitoring/heartbeats
