@@ -40,6 +40,10 @@ with
 using NServiceBus.Transport.SqlServer;
 ```
 
+## Moved types from namespace `NServiceBus.Transport.SqlServer` to `NServiceBus`
+
+For straight forward access to commonly used types certain configuration APIs have been moved from the namespace `NServiceBus.Transport.SqlServer` to `NServiceBus`. The code has to be adjusted accordingly.
+
 ## Timeout Manager Compatibility
 
 In version 6, the timeout manager compatibility mode is disabled by default.

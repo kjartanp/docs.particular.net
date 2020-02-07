@@ -18,6 +18,10 @@ It is recommended to update to .NET Framework 4.6.1 and perform a full migration
 
 For solutions with many projects, the [Target Framework Migrator](https://marketplace.visualstudio.com/items?itemName=PavelSamokha.TargetFrameworkMigrator) Visual Studio extension can reduce the manual effort required in performing an upgrade.
 
+## Moved types from namespace `NServiceBus.Persistence.Sql` to `NServiceBus`
+
+For straight forward access to commonly used types certain configuration APIs have been moved from the namespace `NServiceBus.Persistence.Sql` to `NServiceBus`. The code has to be adjusted accordingly.
+
 ## Microsoft.Data.SqlClient compatibility
 
 In order to add support for `Microsoft.Data.SqlClient`, the persister no longer references `System.Data.SqlClient`. The persister is compatible with both clients, but a package reference to `System.Data.SqlClient` or `Microsoft.Data.SqlClient` will need to be added to any projects using the persister.
